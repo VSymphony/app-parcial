@@ -1,0 +1,16 @@
+<div>
+    <h2>Calcular Precio Final</h2>
+  
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" (input)="actualizarCantidad($event)" />
+  
+    <label for="precio">Precio unitario:</label>
+    <input type="number" id="precio" (input)="actualizarPrecio($event)" />
+  
+    <button (click)="calcularPrecioFinal()">Calcular</button>
+  
+    <div>
+      <h3>Precio final a pagar: ${{precioFinal}}</h3>
+    </div>
+  </div>
+  
