@@ -30,13 +30,10 @@ export class Respuesta2Component {
       this.cuotas = 5;
     }
 
-    // Determinar el porcentaje de interés
     interes = this.prestamo < 4000 ? 0.12 : 0.10;
 
-    // Calcular el monto total con el interés aplicado
     const montoTotalConInteres = this.prestamo * (1 + interes);
 
-    // Calcular el monto de cada cuota
     this.montoPorCuota = montoTotalConInteres / this.cuotas;
   }
 }
