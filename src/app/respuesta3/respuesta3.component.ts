@@ -21,7 +21,6 @@ export class Respuesta3Component {
       const anioActual = new Date().getFullYear();
       const edad = anioActual - this.anioNacimiento;
 
-      // Verificar si tiene 18 años o más
       if (edad >= 18) {
         this.mensaje = `Tienes ${edad} años, por lo tanto, debes sacar tu DNI.`;
       } else {
